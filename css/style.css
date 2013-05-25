@@ -1,0 +1,291 @@
+/* 
+
+Project Name: Final Project- Personal Website
+Author: Tiffany Ho | www.twitter.com/tiffanylingho
+
+*/
+
+
+
+/* ---------------------------------------------------------- */
+/*   FONT   */
+/* ---------------------------------------------------------- */
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('http://fonts.googleapis.com/css?family=Quicksand');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'Pontano Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pontano Sans'), local('PontanoSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/pontanosans/v1/gTHiwyxi6S7iiHpqAoiE3KRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+/* ---------------------------------------------------------- */
+/*   HEADER   */
+/* ---------------------------------------------------------- */
+body {
+	background: #c7c7c7 url('../images/noise.jpg') repeat top left scroll; /* set up a background image */
+	font-family: 'Quicksand', georgia, helvetica, arial, sans-serif;
+	color: #ffffff;	/* set the font color to white for all the content between the HTML <body></body> tags  */
+	font-size: 15px; /* specify the default font size for your site */
+
+}
+
+.clear {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.right:after {
+	clear: both;
+	display: block;
+	content: "";
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 AUTO;
+}
+
+.padding {
+	padding: 20px 0;
+}
+
+#bar {
+
+	background: url('../images/separator.png') repeat-x top left scroll; 
+	border-bottom: 1px solid #e5e5e5; 
+	height: 50px; 
+	text-align: center;
+}
+
+#mainNav ul li {
+	float: right;
+	display: inline;
+	list-style: none;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+
+#mainNav ul li a {
+	font-family: 'Quicksand', sans-serif;
+	color: #ffffff;
+	font-size: 15px;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+}
+
+#mainNav ul li a:hover {
+	border-bottom: 1px solid #ffffff;
+}
+
+#container {
+	background: url('../images/meglow.png') no-repeat top center scroll;
+}
+
+#summary {
+	text-align: center;
+	background: url('../images/grey_wash_wall.png');
+}
+
+	#summary h1 {
+		font-family: 'Quicksand', georgia, helvetica, arial, sans-serif;
+		font-size: 110px; 
+		text-shadow: 0 8px 0 rgba(0,0,0,0.1);
+		margin: 60px 0;
+	}
+
+	#summary h2 {
+		font-family:'Quicksand', georgia, helvetica, arial, sans-serif;
+		font-size: 25px;
+	}
+
+	#summary p {
+		font-family: 'Pontano Sans', sans-serif;
+		font-size: 20px;
+		text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+		margin: 60px 0;
+	}
+		
+	#summary a {
+		color: #A9A9A9;
+	}	
+
+		#summary a:hover {
+			text-decoration: underline;
+		}
+
+#socialNav {
+	padding: 60px 3px;
+	background: url('../images/grey_wash_wall.png');
+}
+
+	#socialNav #icons {
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	#socialNav #icons a {
+		display: block;
+		float: left;
+		height: 60px;
+		width: 60px;
+		margin: 0 20px;
+	}	
+
+	#socialNav #icons a#twitter {
+		background: url('../images/social-icons-twitter.png') no-repeat top center scroll;
+	}	
+
+	#socialNav #icons a#wordpress {
+		background: url('../images/social-icons-blog.png') no-repeat top center scroll;
+	}	
+
+	#socialNav #icons a#github {
+		background: url('../images/social-icons-github.png') no-repeat top center scroll;
+	}	
+
+	#socialNav #icons:after {
+		clear: both;
+		display: block;
+		content: "";
+	}
+
+#about {
+	background: url('../images/grey_wash_wall.png');
+	font-size: 18px;
+	color: #ffffff;
+	text-shadow: 0 1px 0 rgba (255,255, 255, 0.5);
+}
+
+	#about .wrapper {
+		margin: 0 AUTO;
+	}
+
+	#about .padding {
+		margin: 0 20px 40px;
+	}
+
+	#about #aboutMe {
+		float: left;
+		width: 500px;
+	}
+
+	#about #moreAboutMe {
+		float: right;
+		width: 300px;
+	}
+
+	#about #ps {
+		clear: both;
+		text-align: center;
+		font-size: 30px;
+		padding-top: 50px;
+	}
+
+	#about h3 {
+		font-size: 50px;
+		font-family: 'Pontano Sans', sans-serif;
+		margin-top: 30px;
+		margin-bottom: 10px;
+	}
+
+	#about p, #about ul {
+		margin-top: 20px;
+		line-height: 25px;
+	}
+
+	#about ul a {
+		color: black;
+		text-decoration: none;
+	}
+
+		#about ul a:hover {
+			text-decoration: underline;
+		}
+
+	#about #personal {
+		margin-top:50px;
+
+	}
+
+		#about #personal a {
+			display: block;
+			float: center;
+			text-decoration: none;
+			padding: 10px;
+			color: #787878;
+			font-weight: bold;
+			font-family: 'Pontano Sans', sans-serif;
+			font-size: 20px;
+			border-radius: 5px; 
+			text-shadow: 0 1px 0 #ffffff; 
+		}
+
+		#about #personal a div { 
+			display: block; 
+			padding: 8px 18px 8px 38px; 
+		}
+
+
+/**
+ * -----------MOBILE-----------
+ */
+@media only screen and (max-width: 980px) {
+	.wrapper { width: auto; }
+	#summary h1 { font-size: 5.4em; text-shadow: 0 5px 0 rgba(0,0,0,0.1); margin: 40px 0 20px; }
+	#summary h2 { font-size: 2em; }
+	#social { padding: 20px 30px; }
+
+	#personal { margin: 30px AUTO; text-align: center;}
+	#about #aboutMe, #about #moreAboutMe { width: 100%; float: none; clear: none; }
+	#about #moreAboutMe { margin-top: 20px; } 
+	#about #moreAboutMe #skills { float: left; width: 50%; }
+	#about #moreAboutMe #expertise { float: right; width: 50%; }
+}
+
+@media only screen and (max-width: 480px) {
+	.wrapper { width: auto; }
+	#summary h1 { font-size: 3.4em; text-shadow: 0 5px 0 rgba(0,0,0,0.1); margin: 40px 0 20px; }
+	#summary h2 { font-size: 1.5em; }
+
+	#personal { padding-left: 40px; }
+	#about #aboutMe, #about #moreAboutMe { width: 100%; float: none; clear: none; }
+	#about #moreAboutMe { margin-top: 20px; } 
+	#about #moreAboutMe #skills { float: left; width: 50%; }
+	#about #moreAboutMe #expertise { float: right; width: 50%; }
+}
+
+@media only screen and (max-width: 470px) {
+	#summary p { display: none; }
+	#personal { display: none; }
+	#about #moreAboutMe #skills { float: none; clear: both; width: 100% }
+	#about #moreAboutMe #expertise { float: none; clear: both; width: 100% }
+}
+
+@media only screen and (max-width: 400px) {
+	#social #icons { width: 100%; }
+}
+
+@media only screen and (max-width: 320px) {
+	.wrapper { width: auto; }
+	#summary h1 { font-size: 3em; text-shadow: 0 5px 0 rgba(0,0,0,0.1); margin: 40px 0 20px; }
+
+	#social #icons a:first-child { margin-left: 5px; }
+	#social #icons a:last-child { margin-right: 0; }
+
+	#personal { display: none; }
+	#about #aboutMe, #about #moreAboutMe { width: 100%; float: none; clear: none; }
+	#about #moreAboutMe { margin-top: 20px; } 
+	#about #ps { font-size: 1.5em; }
+}
